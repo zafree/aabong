@@ -1,0 +1,40 @@
+.Svg
+  display: inline-flex
+  position: relative
+
+svg
+  pointer-events: none
+
+.Button
+  position: relative
+  display: inline-block
+  vertical-align: top
+  color: $black
+  fill: $black
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  border: 0
+  padding: 0
+  background-color: transparent
+  white-space: nowrap
+  text-rendering: auto
+  user-select: none
+  box-sizing: border-box
+  letter-spacing: 0
+  font-family: $family-paragraph
+  font-weight: $weight-book
+  font-style: normal
+  box-shadow: none
+
+  $root: &
+
+  &:hover,
+  &:focus
+    outline: none
+
+  &__icon
+    position: relative
+
+  &__label
+    

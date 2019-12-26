@@ -1,0 +1,105 @@
+.Hero
+	position: relative
+	margin-bottom: 10em
+	overflow: hidden
+	+desktop
+		margin-bottom: 16em
+	&__heading
+		+container700
+		margin-top: 6em
+		+desktop
+			margin-top: 7em
+			text-align: center
+	&__title
+		font-size: 3.2em
+		line-height: $heading-line-height
+		letter-spacing: -0.033em
+		font-weight: $weight-medium
+		font-family: $family-heading
+		+desktop
+			font-size: 5.2em
+		
+	&__subtitle
+		font-size: 3.2em
+		line-height: $heading-line-height
+		margin-top: 0.1875em
+		letter-spacing: -0.033em
+		font-weight: $weight-light
+		font-family: $family-heading
+		color: $light
+		+desktop
+			font-size: 5.2em
+
+	&__imageWrapper
+		+container1200
+		margin-top: 5em
+		display: flex
+		flex-direction: row
+		margin-right: -80%
+		+phablet
+			margin-right: -30%
+		+tablet
+			margin-right: auto
+		+desktop
+			margin-top: 12em
+	&__image
+
+.Svg
+	&--love
+		height: 22px
+		line-height: 22px
+		margin-left: 5px
+		&:hover
+			.Svg__tooltip
+				opacity: 1
+				visibility: visible
+		+desktop
+			margin-left: 10px
+			height: 36px
+			line-height: 36px
+		.Svg__icon
+			height: 22px
+			+desktop
+				height: 36px
+	&__tooltip
+		position: absolute
+		width: 135px
+		bottom: 0
+		right: 0
+		background-color: #000
+		color: $white
+		display: inline-flex
+		align-items: center
+		justify-content: center
+		padding-left: 8px
+		padding-right: 8px
+		padding-top: 2px
+		border-radius: 4px
+		font-size: 18px
+		line-height: 1
+		font-weight: $weight-book
+		height: 29px
+		letter-spacing: -0.033em
+		margin-right: -100px
+		margin-bottom: -40px
+		opacity: 0
+		visibility: hidden
+		transition: visibility 0s linear 0s, opacity 0.6s 0s
+		+desktop
+			margin-right: -150px
+			margin-bottom: 2px
+		&::before
+			content: ""
+			position: absolute
+			width: 10px
+			height: 10px
+			border-radius: 2px
+			top: 0
+			left: 0
+			background-color: #000
+			transform: rotate(45deg)
+			margin-top: -4px
+			margin-left: 18px
+			+desktop
+				margin-left: -4px
+				margin-top: 9px

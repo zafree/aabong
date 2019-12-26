@@ -1,0 +1,86 @@
+//  app
+
+.Header
+	+container1000
+	height: 100px
+	display: flex
+	align-items: center
+	+desktop
+		height: 130px
+	&__logo
+		height: 24px
+		+desktop
+			height: 32px
+	&__slogan
+		font-size: 1.4em
+		letter-spacing: 0.033em
+		color: #bbb
+		margin-left: 1em
+		font-weight: $weight-medium
+		line-height: 1
+		padding-top: 3px
+		+desktop
+			font-size: 2.1em
+
+
+.Footer
+	margin-top: 10em
+	margin-bottom: 10em
+	+desktop
+		margin-top: 13em
+		margin-bottom: 18em
+	&__container
+		+container700
+	&__copy
+		border-top: 1px solid rgba($black, 0.09)
+		font-size: 1.8em
+		padding-top: 1.429em
+		line-height: 1.8
+		color: $light
+		+desktop
+			font-size: 2.1em
+	.ShareButton
+		display: flex
+		flex-flow: row wrap
+		margin-top: 3em
+	.Button
+		font-size: 1.6em
+		height: 2.22em
+		padding-left: 0.667em
+		padding-right: 0.667em
+		border-radius: 0.22em
+		display: inline-flex
+		align-items: center
+		color: $white
+		+desktop
+			font-size: 1.8em
+			padding-left: 0.889em
+			padding-right: 0.889em
+		&:not(:last-child)
+			margin-right: 0.952em
+			margin-bottom: 0.952em
+		&__icon
+			display: inline-flex
+			margin-right: 0.445em
+			+desktop
+				margin-right: 0.556em
+		&__iconSvg
+			height: 1.33em
+		&__label
+			display: inline-flex
+			// background-color: rgba($white, .5)
+			// font-size: inherit
+		&--facebook
+			background-color: #4267B2	
+		&--twitter
+			background-color: #1DA1F2	
+		&--copyLink
+			background-color: #292929	
+			.Button__label
+				padding-top: 0.16em
+				+desktop
+					padding-top: 0
+		
+		
+
+    
