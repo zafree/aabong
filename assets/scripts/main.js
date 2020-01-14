@@ -1,7 +1,7 @@
 /**
  * Zafree v1.0.0 - The story of us
  * @link https://zafree.github.io/aabong
- * @copyright 2019-2019 Zafree
+ * @copyright 2019-2020 Zafree
  * @license 
  */
 "use strict";
